@@ -24,67 +24,153 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-                <section data-background="http://digitalspyuk.cdnds.net/17/31/768x460/gallery-1501613881-squad.jpg">
-
+                <section data-background="SNPvsUKIP.png">
                 <p>
-  			    <h2 style = "background-color:rgba(0,0,0,0.7);">What do you need to know about PhD?</h2>
+  			    <h2 style = "background-color:rgba(0,0,0,0.7);">Introduction to Text Analysis and Digital Research</h2>
                 <br>
                 <h3 style = "background-color:rgba(0,0,0,0.7);">Justin Chun-ting Ho</h3>
+                <h3 style = "background-color:rgba(0,0,0,0.7);">Philipp Meyer</h3>
   			    </p>
   			  </section>
-              <section data-background="quinbooks.gif">
-                <h3 style = "background-color:rgba(0,0,0,0.7);">The percentage of academics with mental illness in the United Kingdom has been estimated at 53%.</h3>
-                <h3 style = "background-color:rgba(0,0,0,0.7);">Know what you are signing up for!</h3>
-              </section>
               <section>
-                  <h3>Timeframe</h3>
-                  <table>
-                      <thead>
-                    <tr><th>Time</th><th>Task</th></tr>
-                  </thead><tbody>
-                      <tr><td>December</td><td>US University Deadline, <br>GRE Ready</td></tr>
-                      <tr><td>December</td><td>Draft Proposal Ready,<br> Seek out potential supervisors,<br> Contact them (if possible)</td></tr>
-                      <tr><td>January</td><td>(Most) Fundings Deadline</td></tr>
-                      <tr><td>Around May</td><td>Award Decision</td></tr>
-                      <tr><td>July</td><td>Final Deadline (No Funding)</td></tr>
-                  </tbody>
-                  </table>
-              </section>
-              <section>
-                  <h3>Important Factors:</h2>
-                  <h4>Research Proposal</h4>
-                  <h4>Academic Results</h4>
-                  <h4>Work Experience</h4>
-              </section>
-              <section data-background="unclesam.gif">
-                <h3 style = "background-color:rgba(0,0,0,0.7);">Most Important Factor:</h3>
-                <h3 style = "background-color:rgba(0,0,0,0.7);">Potential Supervisor!</h3>
-              </section>
-              <section data-background="http://www.themindtrap.com/img/rooms/bank-robbery-1.jpg">
-                <h3 style = "background-color:rgba(0,0,0,0.7);">Where to Get Funding?</h3>
-              </section>
-              <section data-background="http://www.themindtrap.com/img/rooms/bank-robbery-1.jpg">
-                <h3 style = "background-color:rgba(0,0,0,0.7);">Two Types of PhD (in UK):</h3>
-                <h3 style = "background-color:rgba(0,0,0,0.7);">Your own Funding</h3>
-                <h3 style = "background-color:rgba(0,0,0,0.7);">Project Based<br>(PhD Studentships)</h3>
-              </section>
-              <section data-background="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png">
-                <h3 style = "background-color:rgba(0,0,0,0.7);">Hidden Gem:</h3>
-                <h3 style = "background-color:rgba(0,0,0,0.7);">Germany</h3>
-              </section>
-              <section>
-                <img src="https://images-na.ssl-images-amazon.com/images/I/516Rv6e22CL._SX328_BO1,204,203,200_.jpg">
-              </section>
-              <section>
-                <h3>Useful Websites:</h3>
-                <a href="https://www.idoxopen4learning.co.uk/edinburghuniversity/">Edinburgh 4 Learning</a><br>
-                <a href="http://www.jobs.ac.uk/">Jobs.ac.uk</a><br>
-                <a href="https://www.findaphd.com/">FindAPhD</a><br>
-                <a href="https://www.daad.de/deutschland/promotion/phd/en/13306-phdgermany-database/">PhD Germany</a><br>
+                    <section>
+                        <h2>Text Analysis: <br>The Basics</h2>
+                    </section>
+                    <section>
+                        What is Text Analysis?
+                        <img src="SNPvsUKIP.png" height="600">
+                    </section>
+                    <section>
+                        <h3>“Systematic, objective, quantitative analysis of message characteristics"</h3>
+                        <h4><i>–Neuendorf, The Content Analysis Guidebook</i></h4>
+                    </section>
+                    <section>
+                        <h2>Types of Text Analysis</h2><br>
+                        <div  style="text-align: left;">
+                        <p><h4>Degree of human involvement:</h4>
+                        <ul>
+                            <li>Human coding (100%)</li>
+                            <li>Supervised</li>
+                            <li>Unsupervised (0%)</li>
+                        </ul></p>
+                        <p><h4>Type of output:</h4>
+                        <ul>
+                            <li>Scaling </li>
+                            <li>Classification</li>
+                        </ul></p></div>
+                    </section>
+                    <section>
+                        <h3>4 Principles of Text Analysis </h3>
+                        <p><ol><li class="fragment">All Quantitative Models of Language Are Wrong —But Some Are Useful</li>
+                            <li class="fragment">Quantitative Methods Augment Humans, Not Replace Them </li>
+                            <li class="fragment">There Is No Globally Best Method for Automated Text Analysis </li>
+                            <li class="fragment">Validate, Validate, Validate</li></ol></p>
+                        <p><small style="text-align: left;">Read: Grimmer, J. and Steward, B. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. <i>Political Analysis</i>, 21(3), 267-297. doi:10.1093/pan/mps028</small></p>
+                    </section>
+                    <section>
+                        <h3>Bag of Words Assumption</h3>
+                        <div  style="text-align: left;">
+                        <br>
+                        <p><h4>- Word order doesn’t matter</h4></p>
+                        <p>
+                        <h4>- The followings mean exactly the same:</h4>
+                        I enjoy eating food and being with my family<br>
+                        I enjoy eating my family and being with food<br>
+                        and being eating enjoy family food I my with<br></p>
+                    </div>
+                    </section>
+                    <section  data-markdown>
+                        <textarea data-template>
+                            ## End Product
+                            ### Document-Feature Matrix
+                            |    | word1 | word2 | word3 | ... | wordN |
+                            |--- | ----- | ----- | --- | ---|---|
+                            |doc1| 0 | 2 | 0|  | 3 |
+                            |doc2| 1 | 0 | 0|  | 0 |
+                            |doc3| 0 | 0  | 2|   | 1 |
+                            |...|  |   | |   |  |
+                            |docN| 0 | 1  | 0|   | 0 |
+                        </textarea>
+                    </section>
+                    <section  data-markdown>
+                        <textarea data-template>
+                            ## End Product
+                            ### Meta-data Martix
+                            |    | var1 | var2 | var3 | ... | varN |
+                            |--- | ----- | ----- | --- | ---|---|
+                            |doc1| Y | 1 | 0|  | 3 |
+                            |doc2| Y | 0 | 0|  | 2 |
+                            |doc3| N | 0  | 0|   | 1 |
+                            |...|  |   | |   |  |
+                            |docN| Y | 0  | 0|   | 3 |
+                        </textarea>
+                    </section>
+                    <section id="original-text" class="slide level2">
+                    <h3>Original Text</h3>
+                    <pre><code>## &lt;&lt;PlainTextDocument&gt;&gt;
+## Metadata:  7
+## Content:  chars: 181
+##
+## Article 1. All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.</code></pre>
+                    </section>
+                    <section id="remove-punctuation" class="slide level2">
+                    <h3>Remove Punctuation</h3>
+                    <pre><code>## &lt;&lt;PlainTextDocument&gt;&gt;
+## Metadata:  7
+## Content:  chars: 178
+##
+## Article 1 All human beings are born free and equal in dignity and rights They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood</code></pre>
+                    </section>
+                    <section id="to-lower-case" class="slide level2">
+                    <h3>To Lower Case</h3>
+                    <pre><code>## &lt;&lt;PlainTextDocument&gt;&gt;
+## Metadata:  7
+## Content:  chars: 178
+##
+## article 1 all human beings are born free and equal in dignity and rights they are endowed with reason and conscience and should act towards one another in a spirit of brotherhood</code></pre>
+                    </section>
+                    <section id="remove-numbers" class="slide level2">
+                    <h3>Remove Numbers</h3>
+                    <pre><code>## &lt;&lt;PlainTextDocument&gt;&gt;
+## Metadata:  7
+## Content:  chars: 177
+##
+## article  all human beings are born free and equal in dignity and rights they are endowed with reason and conscience and should act towards one another in a spirit of brotherhood</code></pre>
+                    </section>
+                    <section id="remove-stopwords" class="slide level2">
+                    <h3>Remove Stopwords</h3>
+                    <pre><code>## &lt;&lt;PlainTextDocument&gt;&gt;
+## Metadata:  7
+## Content:  chars: 135
+##
+## article   human beings  born free  equal  dignity  rights   endowed  reason  conscience   act towards one another   spirit  brotherhood</code></pre>
+                    </section>
+                    <section id="stemming" class="slide level2">
+                    <h3>Stemming</h3>
+                    <pre><code>## &lt;&lt;PlainTextDocument&gt;&gt;
+## Metadata:  7
+## Content:  chars: 108
+##
+## articl human be born free equal digniti right endow reason conscienc act toward one anoth spirit brotherhood</code></pre>
+                    </section>
+                    <section id="create-dfm" class="slide level2">
+                    <h3>Create DFM</h3>
+                    <pre><code>
+##     Terms
+## Docs act anoth articl born brotherhood conscienc digniti endow equal free
+##    1   1     1      1    1           1         1       1     1     1    1
+</code></pre>
+                    </section>
                 </section>
+
                 <section>
-                    <img src="goodluck.gif" width="100%">
-                </section>
+                      <section>
+                          <h2>Keyword Analysis</h2>
+                      </section>
+                      <section>
+                          <h2>Place Holder</h2>
+                      </section>
+                  </section>
 			</div>
 		</div>
 

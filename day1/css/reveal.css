@@ -1385,3 +1385,12 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+.slides .header{
+  position:fixed;
+  top: 0;
+}
+.slides .footer{
+  position:fixed;
+  bottom: 0;
+}
