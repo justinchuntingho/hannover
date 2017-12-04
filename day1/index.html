@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>PhD Info</title>
+		<title>Text Analysis</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/night.css">
@@ -32,6 +32,22 @@
                 <h3 style = "background-color:rgba(0,0,0,0.7);">Philipp Meyer</h3>
   			    </p>
   			  </section>
+              <section>
+                  <section>
+                      <h2>Preparations</h2>
+                  </section>
+                  <section>
+                      <div  style="text-align: left;">
+                      <p><b>Required:</b><br>
+                      <ul><li>R</li>
+                          <li>R Studio</li></ul></p>
+                    <p><b>Recommended:</b><br>
+                      <ul><li>Firefox</li>
+                          <li>LibreOffice</li>
+                          <li>ATOM</li></ul></p>
+
+                  </section>
+              </section>
               <section>
                     <section>
                         <h2>Text Analysis: <br>The Basics</h2>
@@ -175,13 +191,114 @@
                           <div  style="text-align: left;">
                           <br>
                           <p><h4>What is a Keyword?</h4></p>
-                          <p>
-                          <h4>“A keyword may be defined as a word which occurs with unusual frequency in a given text. This does not mean high frequency but unusual frequency, by comparison with a reference corpus of some kind”  </h4>
+                          <p>“A keyword may be defined as a word which occurs with <span class="highlight-red">unusual frequency</span> in a given text. This does not mean high frequency but unusual frequency, by comparison with a reference corpus of some kind”  </p>
                           <small>(Scott, M. (1997). PC analysis of key words - and key key words. System, 25(2), 233-45.)</small>
+                      </section>
+                      <section>
+                          <h3>Keyword Analysis</h3>
+                          <div  style="text-align: left;">
+                          <br>
+                          <p><h4>What is Keyness?</h4></p>
+                          <p>“The keyness of a keyword represents the value of log-likelihood or Chi-square statistics; in other words it provides an indicator of a <span class="highlight-red">keyword’s importance</span> as a content descriptor for the appeal.”</p>
+                          <small>(Scott, M. (1997). PC analysis of key words - and key key words. System, 25(2), 233-45.)</small>
+                      </section>
+                      <section>
+                          <h3>Keyword Analysis</h3>
+                          <div  style="text-align: left;">
+                          <br>
+                          <p><h4>What is a Chi-squared test?</h4></p>
+                          <p>Comparison between the observed frequency and expected frequency.</p>
+                      </section>
+                      <section>
+                          <h3>Keyword Analysis</h3>
+                          <div  style="text-align: center;">
+                          <p><h4>What is p-value?</h4></p>
+                          <img src="https://upload.wikimedia.org/wikipedia/en/0/00/P-value_Graph.png" width="70%">
                       </section>
                       <!-- End of Slide -->
                   </section>
-
+        <!-- New Section -->
+                  <section>
+                      <!-- Slide here -->
+                        <section>
+                            <!-- First slide as title -->
+                            <h2>Sentiment Analysis</h2>
+                        </section>
+                        <section>
+                            <h3>What is Sentiment Analysis?</h3>
+                            <div  style="text-align: left;">
+                            <br>
+                            <p>Sentiment analysis, also called <i>opinion mining</i>, is the field of study that analyzes <span class="highlight-red">people’s opinions, sentiments, evaluations, appraisals, attitudes, and emotions</span> towards entities such as products, services, organizations, individuals, issues, events, topics, and their attributes.</p>
+                        </section>
+                        <section>
+                            <h3>What is Sentiment?</h3>
+                            <div  style="text-align: left;">
+                            <br>
+                            <b>- Feelings:</b><br>
+                            <ul><li>Opinions (Good vs Bad)</li>
+                               <li>Emotions (Happy vs Sad)</li>
+                               <li>Attitudes (Like vs Dislike)</li><ul><br>
+                        </section>
+                        <section>
+                            <h3>Levels of Analysis</h3>
+                            <div  style="text-align: left;">
+                            <br>
+                            <h4>- Document level</h4>
+                            <h4>- Sentence level</h4>
+                            <h4>- Entity and Aspect level</h4>
+                        </section>
+                        <section>
+                            <h3>Examples of Usage</h3>
+                            <div  style="text-align: left;">
+                            <br>
+                            <h4>- Product Review</h4>
+                            <h4>- Public Opinion</h4>
+                            <h4>- Voters Support</h4>
+                            <h4>- Wellbeing/Mental Health</h4>
+                        </section>
+                        <section>
+                            <h3>Lexicons</h3>
+                            <br>
+                            <div  style="text-align: left;">
+                            <h4>- "Dictionary" for sentiment</h4>
+                            <b>- Popular Lexicons:</b>
+                            <ul><li>LIWC</li>
+                                <li>SentiwordNet (postive to negative) from +1 to -1, neutrality</li>
+                                <li>AFINN (postive to negative from +5 to -5)</li>
+                                <li>Bing (postive, netgative)</li>
+                                <li>NRC (postive, netgative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust)</li></ul>
+                        </section>
+                        <section>
+                            <h3>Challenges</h3>
+                            <br>
+                            <div  style="text-align: center;">
+                            <h4>1. Opposite orientations in different applications.</h4>
+                            <p>“This camera sucks.” vs <br>“This vacuum cleaner really sucks.”</p>
+                        </section>
+                        <section>
+                            <h3>Challenges</h3>
+                            <br>
+                            <div  style="text-align: center;">
+                            <h4>2. Sentence containing sentiment words may not express any sentiment.</h4>
+                            <p>“If I can find a good camera in the shop, I will buy it.”</p>
+                        </section>
+                        <section>
+                            <h3>Challenges</h3>
+                            <br>
+                            <div  style="text-align: center;">
+                            <h4>3. Sarcastism</h4>
+                            <p>“What a Genius! You had one job.”</p>
+                            <small>Note: Very common in political discussion, especially on social media.</small>
+                        </section>
+                        <section>
+                            <h3>Challenges</h3>
+                            <br>
+                            <div  style="text-align: center;">
+                            <h4>4. Sentences without sentiment words can also imply opinions.</h4>
+                            <p>“This car burns a lot of fuel.”</p>
+                        </section>
+                        <!-- End of Slide -->
+                    </section>
 			</div>
 		</div>
 
