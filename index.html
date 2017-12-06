@@ -34,6 +34,21 @@
   			  </section>
               <section>
                   <section>
+                      <h2>Overview of the Course</h2>
+                  </section>
+                  <section>
+                      <h3>Typical Schedule</h3>
+                    <table>
+                        <thead>
+                      <tr><th>Time</th><th>Task</th></tr>
+                    </thead><tbody>
+                        <tr><td>First Hour</td><td>Lecture & Examples</td></tr>
+                        <tr><td>Second Hour</td><td>In-class Exercises</td></tr>
+                        <tr><td>Third Hour</td><td>Your Dataset</td></tr>
+                    </tbody>
+                    </table>
+                  </section>
+                  <section>
                       <h2>Preparations</h2>
                   </section>
                   <section>
@@ -53,18 +68,55 @@
                   </section>
                   <section>
                       <div  style="text-align: left;">
-                      <p><b>Overview:</b><br>
+                      <p><b>App:</b><br>
+                      <ul><li>Netvizz</li>
+                          <li>Facepager</li></ul></p>
+                      <p><b>R:</b><br>
                       <ul><li>Twitter</li>
                           <li>Guardian</li>
                           <li>Imdb</li>
-                          <li>Exercise: Press Release</li></ul></p>
+                          <li>Press Release</li></ul></p>
                   </section>
                   <section>
-                      <h3>Keyword Analysis</h3>
+                      <h1>Time for R</h1>
+                  </section>
+                  <section>
+                      <h3>Tips for Web Scraping</h3>
                       <div  style="text-align: left;">
                       <br>
-                      <p><h4>What is a Chi-squared test?</h4></p>
-                      <p>Comparison between the observed frequency and expected frequency.</p>
+                      <br>
+                      <h4>Tip 1: Download Once, Load Many Times</h4>
+                  </section>
+                  <section>
+                      <h3>Tips for Web Scraping</h3>
+                      <div  style="text-align: left;">
+                      <br>
+                      <br>
+                      <h4>Tip 2: Selector Gadget</h4>
+                  </section>
+                  <section>
+                      <h3>Tips for Web Scraping</h3>
+                      <div  style="text-align: left;">
+                      <br>
+                      <br>
+                      <h4>Tip 3: Split the HTML and process each section</h4>
+                      <a href="http://www.imdb.com/search/title?count=100&release_date=2017,2017&title_type=feature">Example</a>
+                  </section>
+                  <section>
+                      <h3>Tips for Web Scraping</h3>
+                      <div  style="text-align: left;">
+                      <br>
+                      <br>
+                      <h4>Tip 4: Always start at Page 2</h4>
+                      <a href="http://www.imdb.com/search/title?count=100&release_date=2017,2017&title_type=feature">Example</a>
+                  </section>
+                  <section>
+                      <h3>Tips for Web Scraping</h3>
+                      <div  style="text-align: left;">
+                      <br>
+                      <br>
+                      <h4>Tip 5: Sometimes, you can "hack" the website</h4>
+                      <a href="http://www.imdb.com/search/title?count=100&release_date=2017,2017&title_type=feature">Example</a>
                   </section>
               </section>
               <section>
@@ -73,7 +125,7 @@
                     </section>
                     <section>
                         What is Text Analysis?
-                        <img src="SNPvsUKIP.png" height="600">
+                        <img src="kwds.png" height="600">
                     </section>
                     <section>
                         <h3>“Systematic, objective, quantitative analysis of message characteristics"</h3>
@@ -195,6 +247,16 @@
 ## Docs act anoth articl born brotherhood conscienc digniti endow equal free
 ##    1   1     1      1    1           1         1       1     1     1    1
 </code></pre>
+                    </section>
+                    <section class="slide level2">
+                    <h3>Optional: Create N-Gram</h3>
+                    <pre><code>
+##
+## article_1 1_all all_human human_beings being_are are_born born_free free_and and_equal equal_in
+</code></pre>
+                    </section>
+                    <section>
+                        <h3>Know your data!</h3>
                     </section>
                 </section>
 
@@ -318,6 +380,91 @@
                         </section>
                         <!-- End of Slide -->
                     </section>
+        <!-- End of section -->
+        <!-- New Section -->
+                  <section>
+                      <!-- Slide here -->
+                        <section>
+                            <!-- First slide as title -->
+                            <h2>Topic Modeling</h2>
+                        </section>
+                        <section>
+                            <h3>What is Sentiment Analysis?</h3>
+                            <div  style="text-align: left;">
+                            <br>
+                            <p>Sentiment analysis, also called <i>opinion mining</i>, is the field of study that analyzes <span class="highlight-red">people’s opinions, sentiments, evaluations, appraisals, attitudes, and emotions</span> towards entities such as products, services, organizations, individuals, issues, events, topics, and their attributes.</p>
+                        </section>
+                        <section>
+                            <h3>What is Sentiment?</h3>
+                            <div  style="text-align: left;">
+                            <br>
+                            <b>- Feelings:</b><br>
+                            <ul><li>Opinions (Good vs Bad)</li>
+                               <li>Emotions (Happy vs Sad)</li>
+                               <li>Attitudes (Like vs Dislike)</li><ul><br>
+                        </section>
+                        <section>
+                            <h3>Levels of Analysis</h3>
+                            <div  style="text-align: left;">
+                            <br>
+                            <h4>- Document level</h4>
+                            <h4>- Sentence level</h4>
+                            <h4>- Entity and Aspect level</h4>
+                        </section>
+                        <section>
+                            <h3>Examples of Usage</h3>
+                            <div  style="text-align: left;">
+                            <br>
+                            <h4>- Product Review</h4>
+                            <h4>- Public Opinion</h4>
+                            <h4>- Voters Support</h4>
+                            <h4>- Wellbeing/Mental Health</h4>
+                        </section>
+                        <section>
+                            <h3>Lexicons</h3>
+                            <br>
+                            <div  style="text-align: left;">
+                            <h4>- "Dictionary" for sentiment</h4>
+                            <b>- Popular Lexicons:</b>
+                            <ul><li>LIWC</li>
+                                <li>SentiwordNet (postive to negative) from +1 to -1, neutrality</li>
+                                <li>AFINN (postive to negative from +5 to -5)</li>
+                                <li>Bing (postive, netgative)</li>
+                                <li>NRC (postive, netgative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust)</li></ul>
+                        </section>
+                        <section>
+                            <h3>Challenges</h3>
+                            <br>
+                            <div  style="text-align: center;">
+                            <h4>1. Opposite orientations in different applications.</h4>
+                            <p>“This camera sucks.” vs <br>“This vacuum cleaner really sucks.”</p>
+                        </section>
+                        <section>
+                            <h3>Challenges</h3>
+                            <br>
+                            <div  style="text-align: center;">
+                            <h4>2. Sentence containing sentiment words may not express any sentiment.</h4>
+                            <p>“If I can find a good camera in the shop, I will buy it.”</p>
+                        </section>
+                        <section>
+                            <h3>Challenges</h3>
+                            <br>
+                            <div  style="text-align: center;">
+                            <h4>3. Sarcastism</h4>
+                            <p>“What a Genius! You had one job.”</p>
+                            <small>Note: Very common in political discussion, especially on social media.</small>
+                        </section>
+                        <section>
+                            <h3>Challenges</h3>
+                            <br>
+                            <div  style="text-align: center;">
+                            <h4>4. Sentences without sentiment words can also imply opinions.</h4>
+                            <p>“This car burns a lot of fuel.”</p>
+                        </section>
+                        <!-- End of Slide -->
+                    </section>
+                <!-- End of section -->
+
 			</div>
 		</div>
 
