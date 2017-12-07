@@ -92,7 +92,9 @@
                       <div  style="text-align: left;">
                       <br>
                       <br>
-                      <h4>Tip 2: Selector Gadget</h4>
+                      <h4>Tip 2: Selector Gadget</h4></div><br>
+                      <div  style="text-align: center;">
+                      <a href="http://www.imdb.com/search/title?count=100&release_date=2017,2017&title_type=feature" target="_blank">Example</a></div>
                   </section>
                   <section>
                       <h3>Tips for Web Scraping</h3>
@@ -100,7 +102,6 @@
                       <br>
                       <br>
                       <h4>Tip 3: Split the HTML and process each section</h4>
-                      <a href="http://www.imdb.com/search/title?count=100&release_date=2017,2017&title_type=feature">Example</a>
                   </section>
                   <section>
                       <h3>Tips for Web Scraping</h3>
@@ -108,7 +109,6 @@
                       <br>
                       <br>
                       <h4>Tip 4: Always start at Page 2</h4>
-                      <a href="http://www.imdb.com/search/title?count=100&release_date=2017,2017&title_type=feature">Example</a>
                   </section>
                   <section>
                       <h3>Tips for Web Scraping</h3>
@@ -116,7 +116,14 @@
                       <br>
                       <br>
                       <h4>Tip 5: Sometimes, you can "hack" the website</h4>
-                      <a href="http://www.imdb.com/search/title?count=100&release_date=2017,2017&title_type=feature">Example</a>
+                  </section>
+                  <section>
+                      <h3>Tips for Web Scraping</h3>
+                      <div  style="text-align: left;">
+                      <br>
+                      <br>
+                      <h4>Tip 6: Respect the rules and limits of the websites</h4>
+
                   </section>
               </section>
               <section>
@@ -147,12 +154,49 @@
                         </ul></p></div>
                     </section>
                     <section>
+                        <img src="grimmersteward.png" height="600">
+                    </section>
+                    <section>
                         <h3>4 Principles of Text Analysis </h3>
-                        <p><ol><li class="fragment">All Quantitative Models of Language Are Wrong —But Some Are Useful</li>
-                            <li class="fragment">Quantitative Methods Augment Humans, Not Replace Them </li>
-                            <li class="fragment">There Is No Globally Best Method for Automated Text Analysis </li>
-                            <li class="fragment">Validate, Validate, Validate</li></ol></p>
+                        <p><ol><li>All Quantitative Models of Language Are Wrong —But Some Are Useful</li>
+                            <li>Quantitative Methods Augment Humans, Not Replace Them </li>
+                            <li>There Is No Globally Best Method for Automated Text Analysis </li>
+                            <li>Validate, Validate, Validate</li></ol></p>
                         <p><small style="text-align: left;">Read: Grimmer, J. and Steward, B. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. <i>Political Analysis</i>, 21(3), 267-297. doi:10.1093/pan/mps028</small></p>
+                    </section>
+                    <section>
+                        <div  style="text-align: left;">
+                        <h3>1. All Quantitative Models of Language Are Wrong —But Some Are Useful</h3>
+
+                        <br>
+                        <p>- Data generation process for any text is a mystery<br>
+                            - All methods necessarily fail to provide an accurate account of the data-generating process<br>
+                            - Meanings change drastically: “Time flies like an arrow. Fruit flies like a banana.”</p>
+                    </section>
+                    <section>
+                        <div  style="text-align: left;">
+                        <h3>2. Quantitative Methods Augment Humans, Not Replace Them</h3>
+
+                        <br>
+                        <p>- Text Analysis will not eliminate the need for careful thought nor remove the necessity of reading<br>
+                            - Rather than replace humans, computers amplify human abilities</p>
+                    </section>
+                    <section>
+                        <div  style="text-align: left;">
+                        <h3>3. There Is No Globally Best Method for Automated Text Analysis</h3>
+
+                        <br>
+                        <p>- Different research questions and designs need different models<br>
+                            - The same model will perform well on some data sets, but poorly when applied to other</p>
+                    </section>
+                    <section>
+                        <div  style="text-align: left;">
+                        <h3>4. Validate, Validate, Validate</h3>
+
+                        <br>
+                        <p>- The output of the models may be misleading or simply wrong<br>
+                            - Supervised methods: able to reliably replicate human coding<br>
+                        - Unsupervised methods: the measures are as conceptually valid</p>
                     </section>
                     <section>
                         <h3>Bag of Words Assumption</h3>
@@ -389,78 +433,72 @@
                             <h2>Topic Modeling</h2>
                         </section>
                         <section>
-                            <h3>What is Sentiment Analysis?</h3>
+                            <h3>What is Topic Modeling?</h3>
                             <div  style="text-align: left;">
                             <br>
-                            <p>Sentiment analysis, also called <i>opinion mining</i>, is the field of study that analyzes <span class="highlight-red">people’s opinions, sentiments, evaluations, appraisals, attitudes, and emotions</span> towards entities such as products, services, organizations, individuals, issues, events, topics, and their attributes.</p>
+                            <p><i>"Topic models are <span class="highlight-red">algorithms for discovering the main themes</span> that pervade a large and otherwise unstructured collection of documents."</i></p>
                         </section>
                         <section>
-                            <h3>What is Sentiment?</h3>
+                            <h3>Common Usage</h3>
                             <div  style="text-align: left;">
                             <br>
-                            <b>- Feelings:</b><br>
-                            <ul><li>Opinions (Good vs Bad)</li>
-                               <li>Emotions (Happy vs Sad)</li>
-                               <li>Attitudes (Like vs Dislike)</li><ul><br>
+                            - Information Retrieval<br>
+                            - Recommender Systems<br>
+                            - Exploration of text collections<br>
+                            - Answering Research questions
                         </section>
                         <section>
-                            <h3>Levels of Analysis</h3>
+                            <h3>Data</h3>
                             <div  style="text-align: left;">
-                            <br>
-                            <h4>- Document level</h4>
-                            <h4>- Sentence level</h4>
-                            <h4>- Entity and Aspect level</h4>
+                            <p><br>
+                            - (Large)Text Corpus<br>
+                            - Genetic Data<br>
+                            - Images<br></p>
                         </section>
                         <section>
-                            <h3>Examples of Usage</h3>
+                            <a href="http://signsat40.signsjournal.org/topic-model/#/model/grid" target="_blank">Example</a>
+                        </section>
+                        <section>
+                            How is it done?
+                            <img src="bleiobserved.png" height="600">
+                        </section>
+                        <section>
+                            How is it done?
+                            <img src="blei.png" height="600">
+                        </section>
+
+                        <section>
+                            <img src="ldagraphic.png" height="600">
+                        </section>
+                        <section>
+                            <h3>p(Z, φ, θ | w, α, β)</h3><br>
                             <div  style="text-align: left;">
-                            <br>
-                            <h4>- Product Review</h4>
-                            <h4>- Public Opinion</h4>
-                            <h4>- Voters Support</h4>
-                            <h4>- Wellbeing/Mental Health</h4>
+    <small><b>Compute the probability of:</b><br>
+    Z = assignments of each word in each document to a topic<br>
+    φ (phi) = distribution over words (for each topic)<br>
+    θ (theta) = distribution over topics (for each document)<br>
+    <b>Given...</b><br>
+    w = the data (observed words)<br>
+    α = parameter of the Dirichlet prior for topics per document<br>
+    β = parameter of the Dirichlet prior for words per topic</small>
                         </section>
                         <section>
-                            <h3>Lexicons</h3>
-                            <br>
+                            <h3>Two Things you Need to Know</h3>
                             <div  style="text-align: left;">
-                            <h4>- "Dictionary" for sentiment</h4>
-                            <b>- Popular Lexicons:</b>
-                            <ul><li>LIWC</li>
-                                <li>SentiwordNet (postive to negative) from +1 to -1, neutrality</li>
-                                <li>AFINN (postive to negative from +5 to -5)</li>
-                                <li>Bing (postive, netgative)</li>
-                                <li>NRC (postive, netgative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust)</li></ul>
+                                <br>
+                            <h4>- Each topic is made up of words of varying importance and relevance to the topic</h4>
+                            <h4>- Each document is made up of several topics in various proportions</h4>
                         </section>
                         <section>
-                            <h3>Challenges</h3>
-                            <br>
-                            <div  style="text-align: center;">
-                            <h4>1. Opposite orientations in different applications.</h4>
-                            <p>“This camera sucks.” vs <br>“This vacuum cleaner really sucks.”</p>
+                            <h3>Assumption of how Documents are Created</h3>
+                            <div  style="text-align: left;">
+                            <p>- Topics are specified</p>
+                            <p>- Randomly choose a distribution over topics</p>
+                            <p>- For each word:<br>
+                            <ol><li>Randomly choose a topic</li>
+                                <li>Randomly choose a word from the topics</li></p>
                         </section>
-                        <section>
-                            <h3>Challenges</h3>
-                            <br>
-                            <div  style="text-align: center;">
-                            <h4>2. Sentence containing sentiment words may not express any sentiment.</h4>
-                            <p>“If I can find a good camera in the shop, I will buy it.”</p>
-                        </section>
-                        <section>
-                            <h3>Challenges</h3>
-                            <br>
-                            <div  style="text-align: center;">
-                            <h4>3. Sarcastism</h4>
-                            <p>“What a Genius! You had one job.”</p>
-                            <small>Note: Very common in political discussion, especially on social media.</small>
-                        </section>
-                        <section>
-                            <h3>Challenges</h3>
-                            <br>
-                            <div  style="text-align: center;">
-                            <h4>4. Sentences without sentiment words can also imply opinions.</h4>
-                            <p>“This car burns a lot of fuel.”</p>
-                        </section>
+
                         <!-- End of Slide -->
                     </section>
                 <!-- End of section -->
