@@ -20,7 +20,7 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-        
+
 	</head>
 	<body>
 		<div class="reveal">
@@ -689,12 +689,54 @@ Summarizing: Category frequencies, Scale</p>
                     <section>
                         <h2>Wordfish</h2>
                     </section>
-
-
-
-
-
-
+                    <section>
+                    <h3>The model:</h3><br>
+                    <h4>𝑦<small>𝑖𝑗𝑡</small> ≈ 𝑃𝑂𝐼𝑆𝑆𝑂𝑁(𝜆<small>𝑖𝑗𝑡</small>)</h4>
+<br>
+                    <p>𝑦<small>𝑖𝑗𝑡</small> is the count of word j in
+                    document i’s at time t</p>
+                </section>
+                <section>
+                <h3>The lambda parameter 𝜆:</h3><br>
+                <h4>𝜆<small>𝑖𝑗𝑡</small> = 𝑒𝑥𝑝(𝛼<small>𝑖𝑡</small> + 𝜓<small>𝑗</small> + 𝛽<small>𝑗</small> ∗ 𝜔<small>𝑖𝑡</small>)</h4>
+<br></p><p>with 𝛼 as a set of document fixed effects at time t, Ψ as a
+set of word fixed effects, 𝛽 as estimates of word
+specific weights capturing the importance of word j in
+discriminating between documents (manifestoes or
+speeches), and 𝜔 as the estimate of document (party) i’s
+position at time t (therefore it is indexing one specific
+document)</p>
+            </section>
+                    <section>
+                        <h3>Assumptions</h3>
+                        <div  style="text-align: left;">
+                            <p>1. Documents have one underlying-latent-dimension</p>
+                            <p>2. Distribution of words follows Poisson distribution</p>
+                    </section>
+                    <section>
+                        <h3>Expectation Maximization algorithm</h3>
+                    </section>
+                    <section>
+                        <h3>Step 1: Calculate starting values</h3>
+                    </section>
+                    <section>
+                        <h3>Step 2: Estimate party parameters by length and score of documents</h3>
+                    </section>
+                    <section>
+                        <h3>Step 3: Estimate word parameters by expectation for the party parameters</h3>
+                    </section>
+                    <section>
+                        <h3>Step 4: Calculatelog-likelihood</h3>
+                    </section>
+                    <section>
+                        <h3>Step 5: Repeat steps 2–4 until convergence</h3>
+                    </section>
+                    <section>
+                        <img src="wordfish.png" height="600">
+                    </section>
+                    <section>
+                        <h3>Issue of validity</h3>
+                    </section>
                     <section data-background="monkeyr.gif">
                         <h2 style = "background-color:rgba(0,0,0,0.7);">Time for R</h2>
                     </section>
