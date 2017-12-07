@@ -20,6 +20,7 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+        
 	</head>
 	<body>
 		<div class="reveal">
@@ -587,7 +588,119 @@
                         <!-- End of Slide -->
                     </section>
                 <!-- End of section -->
+                <!-- New Section -->
+                          <section>
+                              <!-- Slide here -->
+                                <section>
+                                    <!-- First slide as title -->
+                                    <h2>The Problem of Party Positions</h2>
+                                </section>
+                                <section>
+                                <h3>The problem of scaling...</h3>
+                                </section>
+                                <section>
+                                <p><i>"Despite the importance of party positions to the study of comparative politics, locating parties in a political space over time is a difficult task."</i></p>
+                                <small>(Slapin and Proksch, 2008)</small>
+                                </section>
+                                <section>
+                                    <h3>Expert Survey</h3>
+                                    <div  style="text-align: left;">
+                                        <p>- Expert's judgement based on various sources, various sources, including manifestos, speeches, voting patterns, and media reports</p>
+                                        <p>- Difficult and expensive to repeat over time and across countries</br>
+                                        - Difficult to know whether different experts understand and answer the questions in a similar manner</p>
+                                </section>
+                                <section>
+                                    <h3>Comparative Manifestos Project</h3>
+                                    <div  style="text-align: left;">
+                                        <p>In operation since 1979</p>
+                                        <p>Coded 2,347 party manifestos issued by 632 different parties in 52 countries over the postwar era</p>
+                                        <a href="https://manifesto-project.wzb.eu/">Link</a>
+                                    </section>
+                                <section>
+                                    <h3>Comparative Manifestos Project</h3>
+                                    <div  style="text-align: left;">
+<p>Sampling unit: Party manifestos for election<br>
+Recording unit: quasi-sentence<br>
+Coding: Allocating to substantial category<br>
+Coding scheme: 56 cat., 7 policy domains, 13 L & R <br>
+Summarizing: Category frequencies, Scale</p>
+                                </section>
+                                <section>
+                                    <h3>CMP Coding Scheme Example</h3>
+                                    <div  style="text-align: center;">
+<p>305 Political Authority<br>
+408 Economic Goals<br>
+410 Productivity<br>
+605 Law and Order<br>
+606 Social Harmony</p>
+                                </section>
+                                <section>
+                                    <h3>CMP Coding Scheme Example</h3>
+                                    <div  style="text-align: center;">
+<p>1. Manufacturing output from Britain is back to the level of nearly twenty years ago.</p>
+<p>2. Unemployment is still rising and there are now generations of school-leavers who no longer even hope for work.</p>
+<p>3. Mrs. Thatcher’s government stands idly by, hoping that the blind forces of the marketplace will restore the jobs and factories that its indifference has destroyed.</p>
+                                </section>
+                                <section>
+                                    <h2>Therefore...</h2>
+                                </section>
+                                <section>
+                                    <h2>Wordscore</h2>
+                                </section>
+                                <section>
+                                    <h3>Goal</h3>
+                                    <div  style="text-align: center;">
+                                        <p>Overcoming the reliability problems of hand-coding and enabling researchers to quickly estimate policy positions for a vast number of texts</p>
+                                </section>
+                                <section>
+                                    <h3>Basic Idea</h3>
+                                    <div  style="text-align: left;">
+                                    <b>Estimate policy positions by comparing two sets of texts:</b><br>
+                                    <ul><li>Reference texts: Documents with known policy positions (eg. from expert surveys)</li>
+                                        <li>Virgin texts: Documents which we know nothing</li><ul>
+                                </section>
+                                <section>
+                                    <img src="wordscore.png" height="600">
+                                </section>
+                    <section>
+                        <h3>Selecting Reference Texts</h3>
+                        <div  style="text-align: left;">
+                            <p>1. the reference texts should use the same lexicon, in the same context, as the virgin texts being analyzed</p>
+                            <p>2. Policy positions of the reference texts should span across the whole dimension</p>
+                            <p>3. Set of reference texts should contain as many different words as possible</p>
+                    </section>
+                    <section>
+                        <h3>Output</h3>
+                        <div  style="text-align: left;">
+                            <p>Text score: Mean score of all of the scored words that a virgin text contains weighted by the frequency of the scored words</p>
+                            <p>Uncertainty: Variance of all of the scored words that a virgin text contains weighted by the frequency of the scored words</p>
+                    </section>
+                    <section>
+                        <h3>Assumptions</h3>
+                        <div  style="text-align: left;">
+                            <p>- Policy positions are reflected in the relative frequency of word usage</p>
+                            <p>- Word meaning remains stable over time</p>
+                            <p>- All words carry the same weight</p>
+                            <p>- All words of interest are contained in the reference texts</p>
+                    </section>
+                    <section data-background="monkeyr.gif">
+                        <h2 style = "background-color:rgba(0,0,0,0.7);">Time for R</h2>
+                    </section>
+                    <section>
+                        <h2>Wordfish</h2>
+                    </section>
 
+
+
+
+
+
+                    <section data-background="monkeyr.gif">
+                        <h2 style = "background-color:rgba(0,0,0,0.7);">Time for R</h2>
+                    </section>
+                <!-- End of Slide -->
+                </section>
+                <!-- End of section -->
 			</div>
 		</div>
 
