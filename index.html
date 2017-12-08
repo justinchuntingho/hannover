@@ -697,15 +697,17 @@ Summarizing: Category frequencies, Scale</p>
                     document i’s at time t</p>
                 </section>
                 <section>
-                <h3>The lambda parameter 𝜆:</h3><br>
+                <h3>The Lambda parameter 𝜆:</h3><br>
                 <h4>𝜆<small>𝑖𝑗𝑡</small> = 𝑒𝑥𝑝(𝛼<small>𝑖𝑡</small> + 𝜓<small>𝑗</small> + 𝛽<small>𝑗</small> ∗ 𝜔<small>𝑖𝑡</small>)</h4>
-<br></p><p>with 𝛼 as a set of document fixed effects at time t, Ψ as a
-set of word fixed effects, 𝛽 as estimates of word
-specific weights capturing the importance of word j in
-discriminating between documents (manifestoes or
-speeches), and 𝜔 as the estimate of document (party) i’s
-position at time t (therefore it is indexing one specific
-document)</p>
+<br></p><p>with 𝛼 as a set of <span class="highlight-red">document fixed effects</span> at time t, Ψ as a set of <span class="highlight-red">word fixed effects</span>, 𝛽 as estimates of <span class="highlight-red">word specific weights</span> capturing the importance of word j in discriminating between documents, and 𝜔 as the estimate ofauthor i’s <span class="highlight-red">position</span> at time t</p>
+            </section>
+            <section>
+            <h3>In English</h3>
+            <div  style="text-align: center;">
+                <p>𝛼: author-document fixed effect<br> → <span class="highlight-red">document length</span></p>
+                <p>𝜓: word fixed effect<br> → <span class="highlight-red">word frequency in dataset</span></p>
+                <p>𝛽: word’s importance<br> → <span class="highlight-red">Score of word in dimension</span></p>
+                <p>𝜔: author’s position in document<br> → <span class="highlight-red">Score of document in dimension</span></p>
             </section>
                     <section>
                         <h3>Assumptions</h3>
@@ -743,24 +745,24 @@ document)</p>
                 <!-- End of Slide -->
                 </section>
                 <!-- End of section -->
-			</div>
-		</div>
+            </div>
+        </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
 </html>
